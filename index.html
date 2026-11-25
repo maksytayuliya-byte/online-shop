@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Інтернет-магазин</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#e5dcff,#fff0f7);
+  padding: 25px;
+  color: #49365d;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px #bbb;
+}
+h1 {
+  text-align: center;
+  color: #8059b5;
+}
+p { text-align: center; }
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 11px;
+  margin-top: 6px;
+  border: 1px solid #cbbbe9;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 22px;
+  background: #8059b5;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🛍️ Інтернет-магазин</h1>
+<p>Інформація про товар</p>
+
+<form action="mailto:your@email.com" method="post" enctype="text/plain">
+
+<label>Назва товару:</label>
+<input type="text" name="Назва товару" required>
+
+<label>Категорія товару:</label>
+<select name="Категорія">
+<option>Одяг</option>
+<option>Взуття</option>
+<option>Електроніка</option>
+<option>Аксесуари</option>
+<option>Косметика</option>
+<option>Інше</option>
+</select>
+
+<label>Виробник:</label>
+<input type="text" name="Виробник">
+
+<label>Артикул товару:</label>
+<input type="text" name="Артикул">
+
+<label>Ціна (грн):</label>
+<input type="number" name="Ціна" min="0" required>
+
+<label>Кількість товару:</label>
+<input type="number" name="Кількість" min="0">
+
+<label>Колір:</label>
+<input type="text" name="Колір">
+
+<label>Розмір:</label>
+<input type="text" name="Розмір">
+
+<label>Опис товару:</label>
+<textarea name="Опис" rows="4"></textarea>
+
+<label>Електронна пошта:</label>
+<input type="email" name="Email" required>
+
+<button type="submit">Надіслати інформацію 📩</button>
+</form>
+</div>
+</body>
+</html>
